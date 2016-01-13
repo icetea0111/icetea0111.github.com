@@ -49,7 +49,7 @@ a { text-decoration: none; color: inherit; }
 #markupList > ul > li .summary span i { font-size: 1.1rem; }
 #markupList > ul > li .summary a { width: 70px; text-align: center; line-height: 40px; font-size: 1.3em; background: #2e1fbe;  }
 #markupList > ul > li .summary a:hover, #markup-list li .summary a:focus {  }
-#markupList > ul > li .summary button { width: 70px; text-align: center; line-height: 40px; font-size: 1.3em; background: #2e1fbe; border:0; }
+#markupList > ul > li .summary button { display:none; width: 70px; text-align: center; line-height: 40px; font-size: 1.3em; background: #2e1fbe; border:0; }
 #markupList > ul > li .summary button:hover, #markupList > ul > li .summary button:focus {  }
 #markupList > ul > li .history { position:fixed; top:50%; left:50%; z-index: 100; width:400px; height:400px; overflow-y:auto; margin:-200px 0 0 -200px; background:#DADFE1; -webkit-transform:scale(0); transform:scale(0); -webkit-transition:transform 0.5s; transition:transform 0.5s; }
 #markupList > ul > li .history.show { -webkit-transform:scale(1); transform:scale(1); }

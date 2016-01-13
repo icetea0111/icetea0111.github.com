@@ -65,7 +65,7 @@ $(function() {
 		$(this).toggleClass('close').nextUntil('h1').slideToggle(100);
 	});
 	$sort.find('a').click(function() {
-		$(this).toggleClass('close').nextUntil('a').not('.remote').slideToggle(100);
+		//$(this).toggleClass('close').nextUntil('a').not('.remote').slideToggle(100);
 	});
 	
 	$sortTxt.click(function() {
