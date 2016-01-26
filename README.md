@@ -1,2 +1,17 @@
-# icetea0111.github.com
-icetea0111 git page
+Markup Index Templet ver 1.0
+====================================
+
+프로젝트 수행 중 진행 상황과 결과물에 대한 공유를 위한 index templet.
+프로젝트팀 내/외부 작업자와의 현행 공유를 위함. 
+html기반 sample 버전.
+
+## 주요기능
+
+1. 유형별 현황  
+2. 작업자별 현황
+3. 전체범위 대비 종합현황
+
+
+## License
+
+MIT
