@@ -1,96 +1,83 @@
 @charset "utf-8";
 
-body { margin: 0; padding: 0; font: 14px/1.5 Roboto, Malgun Gothic; background: #22313F; color: #fff; }
-div, section, article, aside, nav, header, footer, figure, ul, ol, li, p, a, span { margin:0; padding:0; box-sizing:border-box; } 
-h1,h2,h3,h4 { margin:0; padding:0; }
-ul, ol, li { list-style-type:none; }
+body { margin: 0; padding: 0; font: 14px/1.5 Malgun Gothic; background: #23242a; color: #fff; }
 a { text-decoration: none; color: inherit; }
-#wrap { position: relative; margin: 20px; padding-bottom: 50px; transition:transform 0.5s;}
-#sorting { position: fixed; left: -200px; top: 20px; bottom: 0; z-index: 10; width: 200px; padding: 0 10px; transition: all 0.5s; }
-#sorting a { position: relative; display:block; margin-top: 5px; padding: 0 10px; line-height: 40px; background: #2C3E50; font-size: 1.2em; font-weight: normal; cursor: pointer; }
-#sorting a i { position: absolute; right: 10px; top: 0; line-height: 40px; font-size: 1.3em; transition: all 0.3s; }
-#sorting a.close i { transform: rotate(180deg); }
-#sorting a:hover, #sorting a:focus, #sorting a:active, #sorting a.close { background: #1F3A93; }
+#wrap { position: relative; margin: 20px; padding-bottom: 50px; }
+#sorting { position: fixed; left: -210px; top: 20px; bottom: 0; z-index: 100; width: 200px; padding: 0 10px; transition: all 0.5s; background: #23242a; }
+#sorting h1 { position: relative; margin-top: 10px; padding: 0 10px; line-height: 40px; background: #2c2c30; font-size: 1.2em; font-weight: normal; cursor: pointer; }
+#sorting h1 i { position: absolute; right: 10px; top: 0; line-height: 40px; font-size: 1.3em; transition: all 0.3s; }
+#sorting h1.close i { transform: rotate(180deg); }
+#sorting h1:hover, #sorting h1.close { background: #3f58d4; }
 #sorting ul { display: none; margin-top: 10px; }
+#sorting li { list-style-type: upper-alpha; }
 #sorting button { padding-left: 10px; font-size: 1.1em; color: #fff; line-height: 30px; background: transparent; border: 0; }
 #sorting button i { margin-right: 5px; }
 #sorting button:focus { outline: 0; }
-#sorting button:hover { background: #1F3A93; }
-#sorting > button { display: block; width: 100%; padding: 0 10px; line-height: 40px; background: #22313F; text-align: left; font-size: 1.2em; }
+#sorting button:hover { background: #3f58d4; }
+#sorting > button { display: block; width: 100%; padding: 0 10px; line-height: 40px; background: #2c2c30; text-align: left; font-size: 1.2em; }
 #sorting button.sort { font-weight: bold; background: #125aac; top: 0; }
 #sorting ul.worker li button span { margin-left: 5px; color: chartreuse; }
-#sorting .remote { position: absolute; right: -60px; top: 0; width: 50px; text-align: center; }
-#sorting .remote span { display: block; margin-bottom: 5px; font-size: 1.8em; color: #000; background: #f1c40f; cursor: pointer; }
-#sorting .remote span:hover {  }
+#sorting .remote { position: absolute; right: -50px; top: 0; width: 50px; text-align: center; }
+#sorting .remote span { display: block; margin-bottom: 5px; font-size: 1.8em; color: #000; background: yellow; cursor: pointer; opacity: 0.7; }
+#sorting .remote span:hover { opacity: 1; }
 #sorting.show { left: 20px; }
 #sorting.show + #markupList { margin-left: 300px; }
 
-.myName { margin: 0 -30px 20px -30px; background: #2C3E50; text-align: center; }
-.myName strong { line-height: 60px; font-size: 1.6em; font-weight: normal; }
-.myName i { margin-right: 10px; font-size: 1.4em; }
+.project-name { margin: 0 -30px 20px -30px; background: #000; text-align: center; }
+.project-name strong { line-height: 60px; font-size: 1.6em; font-weight: normal; }
+.project-name i { margin-right: 10px; font-size: 1.4em; }
 
 #markupList { margin-left: 100px; padding: 0 30px; transition: 0.5s; }
-#markupList h1 { position: relative; margin: 0 -30px; padding: 0 15px; line-height: 50px; font-size: 1.5em; font-weight: normal; background: #1F3A93; box-shadow: 3px 2px 2px #23242a; cursor: pointer; }
+#markupList h1 { position: relative; margin: 0 -30px; padding: 0 15px; line-height: 50px; font-size: 1.5em; font-weight: normal; background: #3f58d4; box-shadow: 3px 2px 2px #23242a; cursor: pointer; }
 #markupList h1 i { position: absolute; right: 20px; top: 0; line-height: 50px; font-size: 1.8em; transition: all 0.3s; }
 #markupList h1.close { margin-bottom: 10px; }
 #markupList h1.close i { transform: rotate(180deg); }
-#markupList h2 { position: relative; margin:15px 0; padding: 10px; font-size: 1.3em; font-weight: normal; background: #22313F; }
+#markupList h2 { position: relative; padding: 5px 10px; font-size: 1.4em; font-weight: normal; background: #1c2973; box-shadow: 3px 2px 2px #23242a; }
+#markupList h3 { position: relative; padding: 5px 10px; font-size: 1.2em; font-weight: normal; background: #2d3661; box-shadow: 3px 2px 2px #23242a; }
 #markupList h2 *, #markupList h3 * { vertical-align: middle; }
 #markupList h2 i, #markupList h3 i { margin-right: 10px; font-size: 1.5rem; }
-#markupList > ul { }
-#markupList > ul > li { position: relative; margin:0 20px 10px 20px; padding: 15px; list-style-type: none; background:rgba(44, 62, 80, 0.7); }
-#markupList > ul > li:first-child { border-top:0; }
-#markupList > ul > li { transition: opacity 0.5s; }
-#markupList > ul > li strong { font-weight: normal; font-size:1.1em; }
-#markupList > ul > li .summary { position: absolute; right: 6px; top: 5px; }
-#markupList > ul > li .summary * { display: inline-block; vertical-align: middle; color: #fff; }
-#markupList > ul > li .summary span { min-width: 100px; padding:0 10px; line-height: 40px; font-size: 0.9em; background: #555; text-align: center; }
-#markupList > ul > li .summary span.spec { background: #146b10; }
-#markupList > ul > li .summary span i { font-size: 1.1rem; }
-#markupList > ul > li .summary a { width: 70px; text-align: center; line-height: 40px; font-size: 1.3em; background: #2e1fbe;  }
-#markupList > ul > li .summary a:hover, #markup-list li .summary a:focus {  }
-#markupList > ul > li .summary button { display:none; width: 70px; text-align: center; line-height: 40px; font-size: 1.3em; background: #2e1fbe; border:0; }
-#markupList > ul > li .summary button:hover, #markupList > ul > li .summary button:focus {  }
-#markupList > ul > li .history { position:fixed; top:50%; left:50%; z-index: 100; width:400px; height:400px; overflow-y:auto; margin:-200px 0 0 -200px; background:#DADFE1; -webkit-transform:scale(0); transform:scale(0); -webkit-transition:transform 0.5s; transition:transform 0.5s; }
-#markupList > ul > li .history.show { -webkit-transform:scale(1); transform:scale(1); }
-#markupList > ul > li .history h3 { text-align:center; font-size:1.3em; color:#000; }
-#markupList > ul > li .history ul { margin-top:10px; }
-#markupList > ul > li .history li { list-style-type:square; color:#000; }
-#markupList > ul > li .history li strong {  }
-#markupList.hide > ul > li { opacity: 0.2; }
-#markupList.hide h2 { opacity: 0.2; }
-#markupList .sort { opacity: 1 !important; }
-#markupList > ul > li.sort * {  }
-#markupList li[data-type=web] .type {  }
-#markupList li[data-type=resoponse] .type {  }
-#markupList li[data-type=access] .type {  }
-#markupList li[data-type=mobile] .type {  }
-#markupList li[data-type=consult] .type {  }
+#markupList ul { }
+#markupList li { position: relative; padding: 15px 0; border-top: 1px dashed #90909c; list-style-type: decimal-leading-zero; }
+#markupList li { transition: opacity 0.5s; }
+#markupList li:first-child { border-top: 0; }
+#markupList li * { display: inline-block; vertical-align: middle; color: #fff; }
+#markupList li strong { font-weight: normal; }
+#markupList li div { position: absolute; right: 0; top: 10px; }
+#markupList li span { width: 100px; line-height: 40px; font-size: 0.9em; background: #555; text-align: center; }
+#markupList li span.dev { background: #146b10; }
+#markupList li span i { font-size: 1.1rem; }
+#markupList li a { width: 70px; text-align: center; line-height: 40px; font-size: 1.3em; background: #2e1fbe;  }
+#markupList li a:hover, #markup-list li a:focus {  }
+#markupList.hide li { opacity: 0.2; }
+#markupList li.sort { opacity: 1; }
+#markupList li.sort * {  }
 
-.content { position:fixed; right:-100%; top:0; bottom:0; z-index:100; width:100%; height:100%; padding:30px; background:#22313F; transition:all 0.5s ease;}
-.content h1 { font-size:2em; }
-.content .close-content { position:fixed; top:20px; right:-100%; font-size:3em; color:#fff; background:none; border:0; }
-.content.show { right:0; }
-.content.show .close-content { right:20px; }
-#about {  }
+#markupList li[data-type=main] .type {  }
+#markupList li[data-type=contents] .type {  }
+#markupList li[data-type=txt-board] .type {  }
+#markupList li[data-type=img-board] .type {  }
+#markupList li[data-type=form] .type {  }
+#markupList li[data-type=sitemap] .type {  }
 
-#totalCount { position: fixed; bottom: 0; left: 0; right: 0; z-index: 20; height: 50px; background: #2c2c30; opacity: 0.7; transition: all 0.5s; }
+#markupList li[data-status=wait] .status { background: #beb81f; }
+#markupList li[data-status=work] .status { background: orange; }
+#markupList li[data-status=issue] .status { background: red; cursor: pointer; }
+#markupList li[data-status=complete] .status { background: #22a33a; }
+#markupList li[data-status=testing] .status { background: #9222a3; }
+
+#totalCount { position: fixed; bottom: 0; left: 0; right: 0; z-index: 200; height: 50px; background: #2c2c30; opacity: 0.7; transition: all 0.5s; }
 #totalCount:hover { opacity: 1;  }
 #totalCount * { display: inline-block; vertical-align: middle; }
 #totalCount h1 { width: 150px; margin: 0; padding: 0; text-align: center; font-size: 1.2em; color: #fff; font-weight: normal; line-height: 50px; background: #000; }
 #totalCount div { width: calc(100% - 155px); height: 50px; overflow: hidden; margin: 0 auto; background: #000; }
 #totalCount div span { float: left; width: auto; height: 50px; line-height: 50px; text-align: center; font-size: 1.2em; color: #fff; transition: all 0.8s; }
-#totalCount div .response-count { background: #22a33a; }
-#totalCount div .mobile-count { background: red; }
-#totalCount div .access-count { background: orange; }
-#totalCount div .consult-count { background: #beb81f; }
-
-.mask { display:none; position:fixed; top:0; left:0; right:0; bottom:0; z-index:50; background:rgba(0,0,0,0.7); }
-.freeze { overflow:hidden; }
-
+#totalCount div .complete-count { background: #22a33a; }
+#totalCount div .issue-count { background: red; }
+#totalCount div .work-count { background: orange; }
+#totalCount div .wait-count { background: #beb81f; }
 
 @media all and (max-width: 1024px) {
-	.myName { margin: 0 0 20px 0; }
+	.project-name { margin: 0 0 20px 0; }
 	#markupList { margin-left: 0 !important; padding: 0; }	
 	#markupList h1 { margin: 0; }
 }

@@ -3,249 +3,211 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>i'm possible by sungjinlee</title>
+	<title>파일인덱스 for Frontend</title>
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" media="all">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="style.css" media="all">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="markup-index.css" media="all">
 	
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
 	<div id="wrap">
 		
 		<nav id="sorting">
-			<a href="" class="index">Index</a>
-			<a href="#about">About me</a>			
-			<a href="#pf-web">Portfolio</a>
+			<button type="button" data-sort="all">전체</button>
+			
+			<h1>유형<i class="fa fa-angle-down"></i></h1>
 			<ul>
-				<li><button type="button" data-sort="all">All</button></li>
-				<li><button type="button" data-sort="response">Responsible</button></li>
-				<li><button type="button" data-sort="access">Accessibility</button></li>
-				<li><button type="button" data-sort="mobile">Mobile</button></li>
-				<li><button type="button" data-sort="consult">Consulting</button></li>
+				<li><button type="button" data-sort="main">MAIN</button></li>
+				<li><button type="button" data-sort="contents">CONTENTS</button></li>
+				<li><button type="button" data-sort="board">BOARD</button></li>
+				<li><button type="button" data-sort="form">FORM</button></li>
+				<li><button type="button" data-sort="popup">POPUP</button></li>
+				<li><button type="button" data-sort="layer">LAYER</button></li>
+				<li><button type="button" data-sort="sitemap">SITEMAP</button></li>
 			</ul>
-			<aside class="remote">
+			
+			<h1>작업자<i class="fa fa-angle-down"></i></h1>
+			<ul class="worker">
+				<li><button type="button" data-sort="dev1"><i class="fa fa-plane"></i>작업자1</button></li>
+				<li><button type="button" data-sort="dev2"><i class="fa fa-github-alt"></i>작업자2</button></li>
+				<li><button type="button" data-sort="dev3"><i class="fa fa-smile-o"></i>작업자3</button></li>
+			</ul>
+			
+			<h1>진행상황<i class="fa fa-angle-down"></i></h1>
+			<ul>
+				<li><button type="button" data-sort="wait">대기</button></li>
+				<li><button type="button" data-sort="work">작업중</button></li>
+				<li><button type="button" data-sort="issue">이슈</button></li>
+				<li><button type="button" data-sort="complete">완료</button></li>
+			</ul>
+			<div class="remote">
 				<span class="toggler"><i class="fa fa-bars"></i></span>	
 				<span class="collapse"><i class="fa fa-plus-square-o"></i></span>
 				<span class="collapse-off"><i class="fa fa-minus-square-o"></i></span>
-			</aside>	
+			</div>	
 		</nav>
-
+		
 		<section id="markupList">
-			<header class="myName">
-				<i class="fa fa-hashtag"></i>
-				<strong>I'm Possible by Sungjinlee</strong>
+			<header class="project-name">
+				<i class="fa fa-file-text-o"></i>
+				<strong>문화포털(2015)</strong>
 			</header>
-
-			<h1>2015</h1>
-			<h2>삼성서울병원 통합 고도화</h2>
+			<h1>MAIN</h1>
 			<ul>
 				<li>
-					<strong>Mobile 웹/하이브리드앱 Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Mobile</span>
-						<span class="duration">9 month</span>
-						<button type="button" class="show-history"></button>
-						<a href="http://www.samsunghospital.com" target="_blank"></a>
-					</div>
-					<div class="history">
-						<h3>History</h3>
-						<ul>
-							<li>히스토리</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<strong>TV 하이브리드앱 Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Mobile</span>
-						<span class="duration">3 month</span>
+					<strong>메인</strong>
+					<div>
+						<span class="dev">작업자1</span>
+						<span class="type">MAIN</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
 					</div>
 				</li>
 			</ul>
 			
-			<h1>2014</h1>
-			<h2>삼성전자 Global Display Solution 웹사이트 구축 / 고도화</h2>
+			<h1>DEPTH1</h1>
+			<h2>DEPTH2</h2>
 			<ul>
 				<li>
-					<strong>Web Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY, WCAG2.0</span>
-						<span class="type">Accessibility</span>
-						<span class="duration">10 month</span>
-						<a href="http://displaysolutions.samsung.com/" target="_blank"></a>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자2</span>
+						<span class="type">BOARD</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자1</span>
+						<span class="type">POPUP</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자3</span>
+						<span class="type">POPUP</span>
+						<span class="status">대기</span>
+						<a href="" target="_blank"></a>
 					</div>
 				</li>
 			</ul>
-			<h2>동원그룹 회장 웹사이트 구축</h2>
+					
+			<h1>DEPTH1</h1>
+			<h2>DEPTH2</h2>
 			<ul>
 				<li>
-					<strong>부분참여(타임라인 기능구현)</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Responsible</span>
-						<span class="duration">0.5 month</span>
-						<a href="http://www.kimjaechul.com/kor/main/index" target="_blank"></a>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자2</span>
+						<span class="type">BOARD</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
 					</div>
 				</li>
-			</ul>
-
-			<h1>~ 2013</h1>
-			<h2>농심 통합 웹사이트 구축</h2>
-			<ul>
 				<li>
-					<strong>Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Responsible</span>
-						<span class="duration">5 month</span>
-						<a href="http://www.nongshim.com" target="_blank"></a>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자1</span>
+						<span class="type">POPUP</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
 					</div>
 				</li>
-			</ul>
-			<h2>동원그룹 웹사이트 구축</h2>
-			<ul>
 				<li>
-					<strong>웹접근성 인증 컨설팅/보완</strong>
-					<div class="summary">
-						<span class="spec">KWCAG 2.0</span>
-						<span class="type">Consulting</span>
-						<span class="duration">1 month</span>
-						<a href="http://www.dongwon.com/" target="_blank"></a>
-					</div>
-				</li>
-			</ul>
-			<h2>한국은행 화폐박물관 웹사이트 구축</h2>
-			<ul>
-				<li>
-					<strong>Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Responsible</span>
-						<span class="duration">5 month</span>
-						<a href="http://museum.bok.or.kr/index.do" target="_blank"></a>
-					</div>
-				</li>
-			</ul>
-			<h2>삼성엔지니어링 영문 웹사이트 구축</h2>
-			<ul>
-				<li>
-					<strong>웹접근성 인증 컨설팅/보완</strong>
-					<div class="summary">
-						<span class="spec">WCAG 2.0</span>
-						<span class="type">Consulting</span>
-						<span class="duration">0.5 month</span>
-						<a href="http://www.samsungengineering.co.kr/index" target="_blank"></a>
-					</div>
-				</li>
-			</ul>
-			<h2>삼성물산 건설부문 웹사이트 구축</h2>
-			<ul>
-				<li>
-					<strong>웹접근성 인증 컨설팅/보완</strong>
-					<div class="summary">
-						<span class="spec">KWCAG 2.0</span>
-						<span class="type">Consulting</span>
-						<span class="duration">0.5 month</span>
-						<a href="http://www.secc.co.kr/html/" target="_blank"></a>
-					</div>
-				</li>
-			</ul>
-			<h2>국민건강보험 노인장기요양보험 웹사이트 구축</h2>
-			<ul>
-				<li>
-					<strong>웹접근성 인증 컨설팅/보완</strong>
-					<div class="summary">
-						<span class="spec">KWCAG 2.0</span>
-						<span class="type">Consulting</span>
-						<span class="duration">2 month</span>
-						<a href="http://www.longtermcare.or.kr/portal/site/nydev/" target="_blank"></a>
-					</div>
-				</li>
-			</ul>
-			<h2>우리강 이용도우미 댐주변 관광 서비스 구축</h2>
-			<ul>
-				<li>
-					<strong>하이브리드앱 Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Mobile</span>
-						<span class="duration">1 month</span>
-					</div>
-				</li>
-			</ul>
-			<h2>삼성서울병원 ANYMED 모바일 서비스 구축</h2>
-			<ul>
-				<li>
-					<strong>Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Mobile</span>
-						<span class="duration">1 month</span>
-					</div>
-				</li>
-			</ul>
-			<h2>행안부 Open API 모바일서비스 구축</h2>
-			<ul>
-				<li>
-					<strong>Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Mobile</span>
-						<span class="duration">2 month</span>
-					</div>
-				</li>
-			</ul>
-			<h2>SKT Health-On 웹서비스 구축</h2>
-			<ul>
-				<li>
-					<strong>Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">HTML5, CSS3, JQUERY</span>
-						<span class="type">Responsible</span>
-						<span class="duration">5 month</span>
-					</div>
-				</li>
-			</ul>
-			<h2>금호건설 웹사이트 구축</h2>
-			<ul>
-				<li>
-					<strong>Front-end PL</strong>
-					<div class="summary">
-						<span class="spec">XHTML, CSS, JQUERY</span>
-						<span class="type">Accessibility</span>
-						<span class="duration">3 month</span>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자3</span>
+						<span class="type">POPUP</span>
+						<span class="status">대기</span>
+						<a href="" target="_blank"></a>
 					</div>
 				</li>
 			</ul>
 
+			<h2>DEPTH2</h2>
+			<ul>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자2</span>
+						<span class="type">BOARD</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자1</span>
+						<span class="type">POPUP</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자3</span>
+						<span class="type">POPUP</span>
+						<span class="status">대기</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+			</ul>
+
+			<h2>DEPTH2</h2>
+			<ul>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자2</span>
+						<span class="type">BOARD</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자1</span>
+						<span class="type">POPUP</span>
+						<span class="status">작업중</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+				<li>
+					<strong>DEPTH3</strong>
+					<div>
+						<span class="dev">작업자3</span>
+						<span class="type">POPUP</span>
+						<span class="status">대기</span>
+						<a href="" target="_blank"></a>
+					</div>
+				</li>
+			</ul>
+		
 		</section>
 		
 		<aside id="totalCount">
 			<h1></h1>
 			<div>
-				<span class="response-count" title="Responsible"></span>
-				<span class="mobile-count" title="Mobile"></span>
-				<span class="access-count" title="Accessibility"></span>
-				<span class="consult-count" title="Consulting"></span>
+				<span class="complete-count" title="완료"></span>
+				<span class="issue-count" title="이슈"></span>
+				<span class="work-count" title="작업중"></span>
+				<span class="wait-count" title="대기"></span>
 			</div>			
 		</aside>
-
-		<section id="about" class="content">
-			<h1>About me</h1>
-			<div>
-
-			</div>
-			<button type="button" class="close-content"><i class="fa fa-times"></i></button>
-		</section>
-
 	</div>
-	<div class="mask"></div>
-	<script src="script.js"></script>
+
+	<script src="markup-index.js"></script>
 </body>
 </html>
 
